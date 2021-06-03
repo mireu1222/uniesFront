@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '휴가관리'
+        })
+        <section class="bg-type">
+            <header class="inputCard">
+                <article class="inputListWrap">
+                    <input type="radio" id="sample01" name="sample"><label for="sample01">연차</label>
+                    <input type="radio" id="sample02" name="sample" checked><label for="sample02">반차</label>
+                    <input type="radio" id="sample03" name="sample"><label for="sample03">경조</label>
+                    <input type="radio" id="sample04" name="sample"><label for="sample04">병가</label>
+                    <dl class="inputList">
+                        <dt><span class="necessary">시작일</span></dt>
+                        <dd>
+                            <input type="text" class="calendar" value="2021-04-01">
+                        </dd>
+                        <dt><span class="necessary">종료일</span></dt>
+                        <dd>
+                            <input type="text" class="calendar" value="2021-04-01">
+                        </dd>
+                        <dt>사유</dt>
+                        <dd>
+                            <input type="text" placeholder="내용입력">
+                        </dd>
+                    </dl>
+                    <div class="btnWrap">
+                        <input type="button" value="휴가 신청">
+                    </div>
+                </article>
+            </header>
+            <article class="tableWrap">
+                <header>휴가 이력</header>
+                <div class="scroll">
+                    <table summary="">
+                        <caption class="blind"></caption>
+                        <colgroup>
+                            <col span="5">
+                        </colgroup>
+                        <thead>
+                            <th>구분</th>
+                            <th>시작일</th>
+                            <th>종료일</th>
+                            <th>신청일</th>
+                            <th>상태</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="/pages/UMS10602.html" class="label">연차</a>
+                                </td>
+                                <td>2021-04-15(목)</td>
+                                <td>2021-04-16(금)</td>
+                                <td>2021-04-14(수)</td>
+                                <td><span class="color green">접수</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/pages/UMS10602.html" class="label">반차</a>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="color red">취소</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/pages/UMS10602.html" class="label">경조</a>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="color blue">확인</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/pages/UMS10602.html" class="label">병가</a>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>	
+                </div>
+                <ul class="paginate">
+                    <li class="prev"><a href="#">prev</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="on"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class="next"><a href="#">next</a></li>
+                </ul>
+            </article>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+</body>
+</html>

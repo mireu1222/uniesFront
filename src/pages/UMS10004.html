@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '비밀번호 찾기'
+        })
+        <section>
+            <article class="inputListWrap password">
+                <h2 class="title">비밀번호 찾기</h2>
+                <dl class="inputList">
+                    <dt>이름</dt>
+                    <dd>
+                        <input type="text" placeholder="이름을 입력해 주세요.">
+                    </dd>
+                    <dt>사번</dt>
+                    <dd>
+                        <input type="text" placeholder="사번을 입력해 주세요.">
+                    </dd>
+                    <dt>휴대폰 번호</dt>
+                    <dd>
+                        <input type="text" placeholder="휴대폰 번호를 입력해 주세요.">
+                    </dd>
+                </dl>
+                <div class="btnWrap">
+                    <input type="button" class="popupBtn" id="sample01" value="비밀번호 찾기">
+                </div>
+                <a class="popupBtn" id="sample02" style="position:fixed; bottom:0; right:0;">팝업테스트</a>
+            </article>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+
+    @@include('./modules/popup.html', {
+        passtype : true
+    })
+</body>
+</html>

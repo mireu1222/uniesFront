@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '교육이력관리'
+        })
+        <section>
+            <article class="tableWrap">
+                <header>교육 내용</header>
+                <table summary="">
+                    <caption class="blind"></caption>
+                    <colgroup>
+                        <col style="width:77px">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>구분</th>
+                            <td>입문</td>
+                        </tr>
+                        <tr>
+                            <th>교육명</th>
+                            <td>업무입문교육</td>
+                        </tr>
+                        <tr>
+                            <th>교육기간</th>
+                            <td>2021-04-01 ~ 2021-0431</td>
+                        </tr>
+                        <tr>
+                            <th>교육기관</th>
+                            <td>유니에스 온라인 교육센터</td>
+                        </tr>
+                        <tr>
+                            <th>교육방법</th>
+                            <td>
+                                <div class="d-flex">
+                                    <p>온라인 교육</p>
+                                    <a href="#n" class="label">바로가기</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>교육안내</th>
+                            <td>
+                                <ul class="fileWrap">
+                                    <li><a href="#" class="btn-file">첨부파일.hwp</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>교육이수일</th>
+                            <td><input type="text" class="calendar" value="2021-04-15"></td>
+                        </tr>
+                        <tr>
+                            <th>이수여부</th>
+                            <td>
+                                <input type="radio" name="sample" id="sample01"><label for="sample01">이수</label>
+                                <input type="radio" name="sample" id="sample02" checked><label for="sample02">미이수</label>							
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>	
+                <p class="info">※ 이수여부를 선택해서 저장해 주세요!</p>
+                <div class="btnWrap">
+                    <button class="btn">저장</button>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+</body>
+</html>

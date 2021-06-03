@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '근태관리'
+        })
+        <section class="bg-type">
+            <header class="commuteCard">
+                <div>
+                    <span>홍길동(202103001)</span>
+                    <p><span>2021년 04월 01일</span> 목요일</p>
+                </div>
+                <ul class="sortWrap" data-evt="tab">
+                    <li class="active"><a href="#n" class="popupBtn" id="sample00">출근 A</a></li>
+                    <li><a href="#n" class="popupBtn" id="sample00">출근 B</a></li>
+                    <li><a href="#n" class="popupBtn" id="sample00">출근 C</a></li>
+                </ul>
+                <div class="btnWrap">
+                    <button class="btn popupBtn" id="sample01">퇴근체크</button>
+                </div>
+            </header>
+            <article class="tableWrap">
+                <header>근태이력</header>
+                <div class="scroll">
+                    <table summary="">
+                        <caption class="blind"></caption>
+                        <colgroup>
+                            <col span="3">
+                        </colgroup>
+                        <thead>
+                            <th>날짜</th>
+                            <th>출근</th>
+                            <th>퇴근</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2021-02-22 월</td>
+                                <td>출근 A</td>
+                                <td>퇴근 F</td>
+                            </tr>
+                            <tr>
+                                <td>2021-02-23 월</td>
+                                <td>출근 B</td>
+                                <td>퇴근 F</td>
+                            </tr>
+                            <tr>
+                                <td>2021-02-22 월</td>
+                                <td>출근 C</td>
+                                <td>퇴근 F</td>
+                            </tr>
+                            <tr>
+                                <td>2021-02-22 월</td>
+                                <td>출근 A</td>
+                                <td>퇴근 F</td>
+                            </tr>
+                            <tr>
+                                <td>2021-02-22 월</td>
+                                <td>출근 B</td>
+                                <td>퇴근 F</td>
+                            </tr>
+                        </tbody>
+                    </table>	
+                </div>
+                <ul class="paginate">
+                    <li class="prev"><a href="#">prev</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="on"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class="next"><a href="#">next</a></li>
+                </ul>
+            </article>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+
+    @@include('./modules/popup.html', {
+        ums10401 : true
+    })
+</body>
+</html>

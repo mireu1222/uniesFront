@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '인사관리'
+        })
+        <section class="bg-type">
+            <header class="namecard">
+                <div class="card-wrap">
+                    <div>
+                        <p><span>홍길동</span>님</p>
+                        <span>사번 <span>202103001</span></span>
+                    </div>
+                    <ul>
+                        <li>채널<span>대형마트</span></li>
+                        <li>소속<span>이마트</span></li>
+                    </ul>
+                </div>
+                <p class="my-workplace">서울 현대 동대문 면세점</p>
+            </header>
+            <article class="inputListWrap mb">
+                <h2 class="title">인사정보</h2>
+                <dl class="inputList mt0">
+                    <dt><span class="necessary">생년월일</span></dt>
+                    <dd>
+                        <input type="text" value="1992-12-22">
+                    </dd>
+                    <dt><span class="necessary">휴대폰번호</span></dt>
+                    <dd>
+                        <input type="text" value="010-1234-5678">
+                    </dd>
+                    <dt><span class="necessary">입사일</span></dt>
+                    <dd>
+                        <input type="text" value="2021-03-01">
+                    </dd>
+                    <dt><span class="necessary">부서</span></dt>
+                    <dd>
+                        <input type="text" value="면세점">
+                    </dd>
+                    <dt><span class="necessary">직급</span></dt>
+                    <dd>
+                        <input type="text" value="부매니저">
+                    </dd>
+                </dl>
+            </article>
+            <article class="inputListWrap">
+                <h2 class="title">근무처</h2>
+                <dl class="inputList mt0">
+                    <dt><span class="necessary">매장명</span></dt>
+                    <dd>
+                        <input type="text" value="서울 현대 동대문 면세점">
+                    </dd>
+                    <dt><span class="necessary">매장연락처</span></dt>
+                    <dd>
+                        <input type="text" value="02-1234-1234">
+                    </dd>
+                    <dt>매장주소</dt>
+                    <dd>
+                        <div class="addressWrap">
+                            <input type="text" value="12345">		
+                            <a href="#">주소검색</a>
+                        </div>
+                        <input type="text" value="서울시 금천구">		
+                        <input type="text" value="상세주소">		
+                    </dd>
+                </dl>
+                <div class="btnWrap">
+                    <input type="button" value="수정">
+                </div>
+            </article>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+</body>
+</html>

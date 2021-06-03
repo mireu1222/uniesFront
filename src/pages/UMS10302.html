@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '매출관리'
+        })
+        <section class="bg-type">
+            <header class="inputCard">
+                <input type="text" value="2021-04-01 목" disabled>
+                <article class="inputListWrap">
+                    <dl class="inputList">
+                        <dt><span class="necessary">매출</span></dt>
+                        <dd>
+                            <div class="eaWrap">
+                                <input type="text" class="color" value="12,000,000">
+                                <span>원</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <div class="btnWrap">
+                        <input type="button" value="매출 수정">
+                    </div>
+                </article>
+            </header>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+</body>
+</html>

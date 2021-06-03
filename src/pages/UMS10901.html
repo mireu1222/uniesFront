@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '알림'
+        })
+        <section>
+            <div class="searchWrap">
+                <input type="text" placeholder="검색어를 입력해주세요.">
+                <input type="button" value="검색">
+            </div>
+            <article class="tableWrap">
+                <table summary="">
+                    <caption class="blind"></caption>
+                    <colgroup>
+                        <col>
+                        <col style="width:60px">
+                    </colgroup>
+                    <thead>
+                        <th>제목</th>
+                        <th>열람</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="al-l"><a href="/pages/UMS10902.html" class="title-link new">유니에스 알림 내용입니다.</a></td>
+                            <td><span class="color">미열람</span></td>
+                        </tr>
+                        <tr>
+                            <td class="al-l"><a href="/pages/UMS10902.html" class="title-link">유니에스 알림 내용입니다. 확인서 유니에스 알림 내용입니다. 확인서</a></td>
+                            <td><span class="color blue">열람</span></td>
+                        </tr>
+                        <tr>
+                            <td class="al-l"><a href="/pages/UMS10902.html" class="title-link">유니에스 알림 내용입니다. 확인서 유니에스 알림 내용입니다. 확인서</a></td>
+                            <td><span class="color blue">열람</span></td>
+                        </tr>
+                        <tr>
+                            <td class="al-l"><a href="/pages/UMS10902.html" class="title-link">유니에스 알림 내용입니다. 확인서 유니에스 알림 내용입니다. 확인서</a></td>
+                            <td><span class="color blue">열람</span></td>
+                        </tr>
+                        <tr>
+                            <td class="al-l"><a href="/pages/UMS10902.html" class="title-link">유니에스 알림 내용입니다. 확인서 유니에스 알림 내용입니다. 확인서</a></td>
+                            <td><span class="color blue">열람</span></td>
+                        </tr>
+                    </tbody>
+                </table>	
+                <ul class="paginate">
+                    <li class="prev"><a href="#">prev</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="on"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class="next"><a href="#">next</a></li>
+                </ul>
+            </article>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+</body>
+</html>

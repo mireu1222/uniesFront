@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '소통게시판'
+        })
+        <section>
+            <div class="tab-wrap">
+                <ul class="tabs" data-evt="tab">
+                    <li class="active"><a href="#n">전체</a></li>
+                    <li><a href="#n">대형마트</a></li>
+                    <li><a href="#n">백화점</a></li>
+                    <li><a href="#n">면세점</a></li>
+                    <li><a href="#n">동인비</a></li>
+                </ul>
+            </div>
+            <div class="searchWrap">
+                <input type="text" placeholder="검색어를 입력해주세요.">
+                <input type="button" value="검색">
+            </div>
+            <article class="tableWrap">
+                <table summary="">
+                    <caption class="blind"></caption>
+                    <colgroup>
+                        <col>
+                        <col style="width:90px">
+                    </colgroup>
+                    <thead>
+                        <th>제목</th>
+                        <th>열람</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="al-l"><a href="/pages/UMS10802.html" class="title-link new"><span class="notice">[공지]</span>소통게시판 게시물 제목이 들어갑니다. 새글의 경우 .new</a></td>
+                            <td>2021-04-26</td>
+                        </tr>
+                        <tr>
+                            <td class="al-l"><a href="/pages/UMS10802.html" class="title-link">[대형마트] 소통게시판 게시물 제목이 들어갑니다.</a></td>
+                            <td>2021-04-26</td>
+                        </tr>
+                        <tr>
+                            <td class="al-l"><a href="/pages/UMS10802.html" class="title-link">[대형마트] 소통게시판 게시물 제목이 들어갑니다.</a></td>
+                            <td>2021-04-26</td>
+                        </tr>
+                        <tr>
+                            <td class="al-l"><a href="/pages/UMS10802.html" class="title-link">[대형마트] 소통게시판 게시물 제목이 들어갑니다.</a></td>
+                            <td>2021-04-26</td>
+                        </tr>
+                        <tr>
+                            <td class="al-l"><a href="/pages/UMS10802.html" class="title-link">[대형마트] 소통게시판 게시물 제목이 들어갑니다.</a></td>
+                            <td>2021-04-26</td>
+                        </tr>
+                    </tbody>
+                </table>	
+                <ul class="paginate">
+                    <li class="prev"><a href="#">prev</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="on"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class="next"><a href="#">next</a></li>
+                </ul>
+            </article>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+</body>
+</html>

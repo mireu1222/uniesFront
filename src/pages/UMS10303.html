@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '신제품관리'
+        })
+        <section class="bg-type">
+            <header class="inputCard">
+                <div class="withButtonWrap">
+                    <input type="text" class="calendar" value="2021-04-01 목">
+                    <button>매출</button>
+                </div>
+                <article class="inputListWrap">
+                    <dl class="inputList">
+                        <dt><span class="necessary">신제품항목</span></dt>
+                        <dd>
+                            <select>
+                                <option>신제품</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <div class="col-wrap">
+                        <dl class="inputList">
+                            <dt><span class="necessary">판매갯수</span></dt>
+                            <dd>
+                                <div class="eaWrap">
+                                    <input type="text" class="color" value="133">
+                                    <span>개</span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="inputList">
+                            <dt><span class="necessary">판매금액</span></dt>
+                            <dd>
+                                <div class="eaWrap">
+                                    <input type="text" class="color" value="12,000,000">
+                                    <span>원</span>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="btnWrap">
+                        <input type="button" value="신제품 매출 등록">
+                    </div>
+                </article>
+            </header>
+            <article class="tableWrap">
+                <header>매출이력</header>
+                <div class="scroll">
+                    <table summary="">
+                        <caption class="blind"></caption>
+                        <colgroup>
+                            <col span="4">
+                        </colgroup>
+                        <thead>
+                            <th>날짜</th>
+                            <th>신제품명</th>
+                            <th>판매</th>
+                            <th>매출금액</th>
+                            <th>등록일</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2021-02-22 월</td>
+                                <td><a href="/pages/UMS10304.html" class="text-link">신제품제품명111</a></td>
+                                <td>133개</td>
+                                <td class="bg">12,000,000원</td>
+                                <td>2021-02-22</td>
+                            </tr>
+                            <tr>
+                                <td>2021-02-22 월</td>
+                                <td><a href="/pages/UMS10304.html" class="text-link">신제품제품명111</a></td>
+                                <td>133개</td>
+                                <td class="bg">12,000,000원</td>
+                                <td>2021-02-22</td>
+                            </tr>
+                            <tr>
+                                <td>2021-02-22 월</td>
+                                <td><a href="/pages/UMS10304.html" class="text-link">신제품제품명111</a></td>
+                                <td>133개</td>
+                                <td class="bg">12,000,000원</td>
+                                <td>2021-02-22</td>
+                            </tr>
+                            <tr>
+                                <td>2021-02-22 월</td>
+                                <td><a href="/pages/UMS10304.html" class="text-link">신제품제품명111</a></td>
+                                <td>133개</td>
+                                <td class="bg">12,000,000원</td>
+                                <td>2021-02-22</td>
+                            </tr>
+                            <tr>
+                                <td>2021-02-22 월</td>
+                                <td><a href="/pages/UMS10304.html" class="text-link">신제품제품명111</a></td>
+                                <td>133개</td>
+                                <td class="bg">12,000,000원</td>
+                                <td>2021-02-22</td>
+                            </tr>
+                        </tbody>
+                    </table>	
+                </div>
+                <ul class="paginate">
+                    <li class="prev"><a href="#">prev</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="on"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class="next"><a href="#">next</a></li>
+                </ul>
+            </article>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+</body>
+</html>

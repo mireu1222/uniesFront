@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '교육이력관리'
+        })
+        <section>
+            <ul class="sortWrap" data-evt="tab">
+                <li class="active"><a href="#n">전체</a></li>
+                <li><a href="#n">이수</a></li>
+                <li><a href="#n">미이수</a></li>
+            </ul>
+            <article class="inputListWrap mb">
+                <dl class="inputList">
+                    <dt><span class="necessary">연도선택</span></dt>
+                    <dd>
+                        <select>
+                            <option>2021</option>
+                        </select>
+                    </dd>
+                </dl>
+            </article>
+            <article class="tableWrap">
+                <header>교육 이력</header>
+                <div class="scroll">
+                    <table summary="">
+                        <caption class="blind"></caption>
+                        <colgroup>
+                            <col span="4">
+                        </colgroup>
+                        <thead>
+                            <th>구분</th>
+                            <th>시작일</th>
+                            <th>신청일</th>
+                            <th>상태</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>입문</td>
+                                <td><a href="/pages/UMS10702.html" class="text-link">업무입문교육</a></td>
+                                <td>2021-04-14 ~ 2021-04-31</td>
+                                <td><span class="color">미이수</span></td>
+                            </tr>
+                            <tr>
+                                <td>기본</td>
+                                <td><a href="/pages/UMS10702.html" class="text-link">서비스기본교육</a></td>
+                                <td>2021-04-14 ~ 2021-04-31</td>
+                                <td><span class="color green">이수</span></td>
+                            </tr>
+                            <tr>
+                                <td>전문</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>필수</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>	
+                </div>
+                <ul class="paginate">
+                    <li class="prev"><a href="#">prev</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="on"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class="next"><a href="#">next</a></li>
+                </ul>
+            </article>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+</body>
+</html>

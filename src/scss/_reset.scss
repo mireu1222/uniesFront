@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* reset */
+html {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; min-height:100vh;-webkit-text-size-adjust: none;-moz-text-size-adjust: none;-ms-text-size-adjust: none; overflow-y: hidden;}
+*, *:before, *:after {box-sizing: inherit;}
+    *:before, *:after	{vertical-align:top;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea, button,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{margin:0; padding:0; border:0; background-size:contain; background-repeat:no-repeat;}
+body	{font-family:"Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; width:100%; height:100%; color:#303030; font-size:13px; font-weight:normal; line-height:1; -webkit-text-size-adjust:none;}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section	{display:block;}
+p, h1, h2, h3	{font-weight:inherit; letter-spacing:inherit;}
+span	{display:inline-block; vertical-align:top;}
+img, li	{vertical-align:middle;}
+a	{display:block; text-decoration:none; color:inherit;}
+a:hover	{text-decoration:none;}
+ol, ul	{list-style:none;}
+legend, caption, hr	{display:none;}
+table {border-collapse:collapse; border-spacing:0; table-layout:fixed; empty-cells:show; width:100%; word-wrap:break-word;}
+th	{font-weight:inherit;}
+input, select,button	{vertical-align:top; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; font-family:"Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; color:#333; font-size:12px; font-weight:400;}
+input::-ms-clear	{visibility:hidden; display:none;}
+select::-ms-expand {display:none;}
+input[type="text"], input[type="password"], select, button	{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    -o-appearance:none;
+}
+button::-moz-focus-inner {margin: -1px; padding: 0; }
+.blind {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}

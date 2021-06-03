@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./layout/head.html')
+<body>
+    <div class="container">
+        @@include('./layout/header.html', {
+            title : '매출현황 보고'
+        })
+        <section class="bg-type">
+            <header class="inputCard">
+                <article class="inputListWrap">
+                    <dl class="inputList">
+                        <dt><span class="necessary">기간</span></dt>
+                        <dd>
+                            <div class="timeWrap">
+                                <select>
+                                    <option>년</option>
+                                </select>
+                                <select>
+                                    <option>월</option>
+                                </select>
+                            </div>
+                        </dd>
+                    </dl>
+                    <div class="btnWrap">
+                        <input type="button" value="검색">
+                    </div>
+                </article>
+            </header>
+            <article class="tableWrap">
+                <header>매출현황</header>
+                <div class="scroll">
+                    <table summary="">
+                        <caption class="blind"></caption>
+                        <colgroup>
+                            <col span="4">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" rowspan="2">전국</th>
+                                <th scope="colgroup" colspan="4">매출현황</th>
+                                <th scope="colgroup" colspan="2">전년대비</th>
+                                <th scope="col" rowspan="2">비고</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">3월 목표</th>
+                                <th scope="col">전일실적</th>
+                                <th scope="col">누계실적</th>
+                                <th scope="col">달성율</th>
+                                <th scope="col">2020누계실적</th>
+                                <th scope="col">달성율</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">마트</th>
+                                <td class="bg">9,999,999,999</td>
+                                <td>9,999,999,999</td>
+                                <td>9,999,999,999</td>
+                                <td class="bg">99.99%</td>
+                                <td>9,999,999,999</td>
+                                <td class="bg">99.99%</td>
+                                <td>
+                                    <dl class="complex-dl">
+                                        <dt>&lt;03월 매장수&gt;</dt>
+                                        <dd>
+                                            <ul class="dot-list">
+                                                <li>2020년 : 78개소</li>
+                                                <li>2021년 : 78개소</li>
+                                            </ul>
+                                            <p class="blt">3/26 롯데노원점 신규오픈</p>
+                                        </dd>
+                                    </dl>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">백화점</th>
+                                <td class="bg">9,999,999,999</td>
+                                <td>9,999,999,999</td>
+                                <td>9,999,999,999</td>
+                                <td class="bg">99.99%</td>
+                                <td>9,999,999,999</td>
+                                <td class="bg">99.99%</td>
+                                <td>
+                                    <dl class="complex-dl">
+                                        <dt>&lt;03월 매장수&gt;</dt>
+                                        <dd>
+                                            <ul class="dot-list">
+                                                <li>2020년 : 78개소</li>
+                                                <li>2021년 : 78개소</li>
+                                            </ul>
+                                            <p class="blt">3/26 롯데노원점 신규오픈</p>
+                                        </dd>
+                                    </dl>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">면세</th>
+                                <td class="bg">9,999,999,999</td>
+                                <td>9,999,999,999</td>
+                                <td>9,999,999,999</td>
+                                <td class="bg">99.99%</td>
+                                <td>9,999,999,999</td>
+                                <td class="bg">99.99%</td>
+                                <td>
+                                    <dl class="complex-dl">
+                                        <dt>&lt;03월 매장수&gt;</dt>
+                                        <dd>
+                                            <ul class="dot-list">
+                                                <li>2020년 : 78개소</li>
+                                                <li>2021년 : 78개소</li>
+                                            </ul>
+                                            <p class="blt">3/26 롯데노원점 신규오픈</p>
+                                        </dd>
+                                    </dl>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">동인비</th>
+                                <td class="bg">9,999,999,999</td>
+                                <td>9,999,999,999</td>
+                                <td>9,999,999,999</td>
+                                <td class="bg">99.99%</td>
+                                <td>9,999,999,999</td>
+                                <td class="bg">99.99%</td>
+                                <td>
+                                    <dl class="complex-dl">
+                                        <dt>&lt;03월 매장수&gt;</dt>
+                                        <dd>
+                                            <ul class="dot-list">
+                                                <li>2020년 : 78개소</li>
+                                                <li>2021년 : 78개소</li>
+                                            </ul>
+                                            <p class="blt">3/26 롯데노원점 신규오픈</p>
+                                        </dd>
+                                    </dl>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>	
+                </div>
+            </article>
+        </section>
+    </div>
+
+    @@include('./layout/menu.html')
+</body>
+</html>
